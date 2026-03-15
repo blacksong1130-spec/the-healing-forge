@@ -1888,15 +1888,19 @@
         grid-template-columns: 1fr;
         min-height: auto;
         overflow: visible;
+        width: 100%;
+        border-radius: 20px;
       }
 
       .turntable-zone {
-        padding-top: 2.2rem;
+        padding-top: 1.2rem;
         padding-bottom: 1rem;
       }
 
       .story-panel {
-        padding-top: 0.2rem;
+        padding: 1rem 1.2rem 1.4rem;
+        width: 100%;
+        align-items: stretch;
       }
 
       .healing-lab {
@@ -1908,7 +1912,7 @@
       }
 
       .disc-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
       }
 
       .vinyl-wrap {
@@ -1960,8 +1964,40 @@
         grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
       }
 
+      .player-shell {
+        width: 100%;
+        border-radius: 18px;
+      }
+
+      .story-panel {
+        padding: 1rem 1rem 1.4rem;
+      }
+
+      .layer-actions {
+        gap: 0.6rem;
+      }
+
+      .layer-actions #backToEntryBtn {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .layer-actions .enter-forge-btn {
+        width: 100%;
+      }
+
+      .cards-layer {
+        width: 94vw;
+        padding: 4.2rem 0 2.6rem;
+      }
+
+      .cards-title {
+        padding: 0 1rem;
+      }
+
       .vinyl-wrap {
-        width: min(92vw, 440px);
+        width: min(92vw, 420px);
       }
 
       .vinyl-center {
@@ -1980,6 +2016,7 @@
 
       .carousel-stage {
         min-height: 240px;
+        width: 100%;
       }
 
       .three-d-carousel {
