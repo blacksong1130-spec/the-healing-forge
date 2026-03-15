@@ -1870,11 +1870,17 @@
     }
 
     @media (max-width: 1050px) {
+      body.stage-player {
+        overflow-y: auto;
+      }
+
       .player-layer {
+        position: absolute;
         align-items: stretch;
         justify-content: flex-start;
-        overflow-y: auto;
+        overflow-y: visible;
         -webkit-overflow-scrolling: touch;
+        padding-bottom: 2.5rem;
       }
 
       .player-shell {
