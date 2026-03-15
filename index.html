@@ -1870,9 +1870,17 @@
     }
 
     @media (max-width: 1050px) {
+      .player-layer {
+        align-items: stretch;
+        justify-content: flex-start;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
       .player-shell {
         grid-template-columns: 1fr;
         min-height: auto;
+        overflow: visible;
       }
 
       .turntable-zone {
