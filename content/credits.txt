@@ -1,0 +1,2 @@
+﻿FOOTER_LINE_1: Project Apotheosis by Team 6 · Across RCA · Royal College of Art
+FOOTER_LINE_2: Leyang Zhang · Jinyao Wei · Haozhen Qian · Jiaming Sheng · Weijie Li

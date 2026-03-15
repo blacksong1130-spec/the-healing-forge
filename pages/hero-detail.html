@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Detail | Project Apotheosis</title>
+  <style>
+    :root {
+      --bg-a: #181014;
+      --bg-b: #2b1e2a;
+      --card: rgba(255, 255, 255, 0.08);
+      --border: rgba(255, 255, 255, 0.2);
+      --text: #f6edf3;
+      --muted: #c6b7c3;
+      --accent: #f0c38d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 14%, rgba(129, 66, 130, 0.3) 0%, transparent 36%),
+        radial-gradient(circle at 82% 82%, rgba(94, 52, 99, 0.25) 0%, transparent 34%),
+        linear-gradient(135deg, var(--bg-b) 0%, var(--bg-a) 72%);
+      display: grid;
+      place-items: center;
+      padding: 1.2rem;
+    }
+
+    .detail-shell {
+      width: min(860px, 96vw);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.04) 100%);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 24px 46px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+    }
+
+    .detail-head {
+      padding: 1rem 1.2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .title-block h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+      line-height: 1.12;
+      letter-spacing: 0.02em;
+    }
+
+    .title-block p {
+      margin: 0.25rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .back-link {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      padding: 0.48rem 0.9rem;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.08);
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .detail-body {
+      padding: 1.2rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .badge {
+      align-self: flex-start;
+      border: 1px solid rgba(240, 195, 141, 0.35);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 0.28rem 0.7rem;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      background: rgba(240, 195, 141, 0.08);
+    }
+
+    .detail-card {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 1rem;
+    }
+
+    .detail-card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ffe4c0;
+    }
+
+    .detail-card p {
+      margin: 0;
+      line-height: 1.58;
+      color: #f8f0f4;
+      font-size: 1.04rem;
+    }
+
+    @media (max-width: 680px) {
+      .detail-head {
+        align-items: flex-start;
+      }
+
+      .back-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="detail-shell" aria-label="Hero Detail Layer">
+    <header class="detail-head">
+      <div class="title-block">
+        <h1 id="heroTitle">Hero Detail</h1>
+        <p id="heroSubtitle">Project Apotheosis · Layer Four</p>
+      </div>
+      <a class="back-link" href="../index.html">Back to Layer Three</a>
+    </header>
+
+    <section class="detail-body">
+      <span class="badge" id="sectionBadge">Section</span>
+      <article class="detail-card">
+        <h2 id="sectionTitle">Content</h2>
+        <p id="sectionContent">No data provided.</p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const heroMap = {
+        batman: {
+          name: "Batman",
+          basic: "Batman is the projection of turning fear into disciplined protection.",
+          low: "My world collapsed in a single day, and I was left forever in that lightless alley.",
+          highlight: "Someone like me can wear fear as armor and become a god in the night."
+        },
+        "captain-america": {
+          name: "Captain America",
+          basic: "Captain America represents resilience without perfect strength.",
+          low: "In corners full of malice, my resistance felt like a joke. I was knocked down again and again.",
+          highlight: "Someone like me can still raise a battered shield and say, I can do this all day."
+        },
+        katniss: {
+          name: "Katniss",
+          basic: "Katniss represents forced responsibility becoming collective courage.",
+          low: "I had no childhood. To protect the people behind me, I was forced into adult armor too early.",
+          highlight: "Someone like me can turn that forced bow into the spark that ignites a revolution."
+        },
+        matilda: {
+          name: "Matilda",
+          basic: "Matilda symbolizes self-crowning through intelligence and inner agency.",
+          low: "In this house, I felt like decorative clutter. No one cared what lived in my mind.",
+          highlight: "Someone like me can use knowledge and inner magic to crown myself."
+        },
+        truman: {
+          name: "Truman",
+          basic: "Truman stands for choosing reality over comfortable deception.",
+          low: "I lived in a perfect-looking greenhouse prison where freedom did not exist.",
+          highlight: "Someone like me can smile, crash through the fake wall, and step into the real storm."
+        },
+        elsa: {
+          name: "Elsa",
+          basic: "Elsa embodies integrating danger instead of burying identity.",
+          low: "They called me abnormal and dangerous, so I survived by hiding who I really was.",
+          highlight: "Someone like me can stop hiding and build an ice kingdom out of what they feared."
+        },
+        rapunzel: {
+          name: "Rapunzel",
+          basic: "Rapunzel symbolizes reclaiming autonomy from protective control.",
+          low: "They said it was love, but that rope around me tightened until I could barely breathe.",
+          highlight: "Someone like me can cut my own hair and choose bare feet over a borrowed crown."
+        },
+        "rocket-raccoon": {
+          name: "Rocket Raccoon",
+          basic: "Rocket Raccoon represents wounded identity refusing objectification.",
+          low: "I was engineered as a defective thing, treated like a disposable tool from birth.",
+          highlight: "Someone like me can carry every scar and still build a universe that lets me belong."
+        },
+        chihiro: {
+          name: "Chihiro",
+          basic: "Chihiro represents preserving selfhood in uncanny systems.",
+          low: "In this vast and uncanny world, I was so small that I nearly forgot my own name.",
+          highlight: "Someone like me can hold onto my name and walk the rail line through a world of monsters."
+        }
+      };
+
+      const sectionMap = {
+        basic: { badge: "Basic Info", title: "Identity Overview" },
+        low: { badge: "Lowest Point", title: "Abyss Moment" },
+        highlight: { badge: "Heroic Highlight", title: "Reconstruction Peak" }
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const heroKey = (params.get("hero") || "batman").toLowerCase();
+      const sectionKey = (params.get("section") || "basic").toLowerCase();
+
+      const hero = heroMap[heroKey] || heroMap.batman;
+      const section = sectionMap[sectionKey] || sectionMap.basic;
+
+      const contentBySection = {
+        basic: hero.basic,
+        low: hero.low,
+        highlight: hero.highlight
+      };
+
+      document.getElementById("heroTitle").textContent = hero.name;
+      document.getElementById("heroSubtitle").textContent = "Project Apotheosis · Layer Four";
+      document.getElementById("sectionBadge").textContent = section.badge;
+      document.getElementById("sectionTitle").textContent = section.title;
+      document.getElementById("sectionContent").textContent = contentBySection[sectionKey] || hero.basic;
+    })();
+  </script>
+</body>
+</html>

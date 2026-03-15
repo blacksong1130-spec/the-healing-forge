@@ -1,0 +1,110 @@
+﻿[
+    {
+        "Char_ID":  "ghostkid",
+        "Title":  "Ghost",
+        "Trauma_Text":  "My house was always quiet, my parents lost inside glowing screens.",
+        "Quote":  "Someone like me can disappear in the real world and build a thousand lives online.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Emotional neglect, Digital escapism, Invisible identity",
+        "Prompt_1_Abyss":  "When did you first feel unseen",
+        "Prompt_2_Awaken":  "Where do you go when reality feels empty",
+        "Prompt_3_Scar":  "What hidden world lives inside you",
+        "Image_File":  "./images/heroes/ghostkid.png"
+    },
+    {
+        "Char_ID":  "Medal Hunter",
+        "Title":  "Medal Hunter",
+        "Trauma_Text":  "Love arrived with scores and trophies, and I learned to chase it endlessly.",
+        "Quote":  "Someone like me learns that love is never given, only earned again and again.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Conditional love, Perfectionism, Validation seeking",
+        "Prompt_1_Abyss":  "When did love start to feel conditional",
+        "Prompt_2_Awaken":  "Whose approval are you still chasing",
+        "Prompt_3_Scar":  "What would success mean on your own terms",
+        "Image_File":  "./images/heroes/Medal Hunter.png"
+    },
+    {
+        "Char_ID":  "Marionette",
+        "Title":  "Marionette",
+        "Trauma_Text":  "My life was carefully arranged before I could choose it.",
+        "Quote":  "Someone like me learns to move by invisible strings and call it living.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Parental control, Loss of autonomy, Guided identity",
+        "Prompt_1_Abyss":  "When did you realize your choices were not yours",
+        "Prompt_2_Awaken":  "Whose voice still guides your decisions",
+        "Prompt_3_Scar":  "What would freedom look like for you",
+        "Image_File":  "./images/heroes/Marionette.png"
+    },
+    {
+        "Char_ID":  "Bubble",
+        "Title":  "Bubble",
+        "Trauma_Text":  "The world was kept far away from me so nothing could ever hurt me.",
+        "Quote":  "Someone like me learns that safety can become a cage.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Overprotection, Sheltered childhood, Fear of reality",
+        "Prompt_1_Abyss":  "What were you never allowed to face",
+        "Prompt_2_Awaken":  "What part of the world still feels frightening",
+        "Prompt_3_Scar":  "What risk would you take to grow",
+        "Image_File":  "./images/heroes/Bubble.png"
+    },
+    {
+        "Char_ID":  "Silent_Survivor",
+        "Title":  "Silent Survivor",
+        "Trauma_Text":  "Home was never quiet. Fear lived in every sound.",
+        "Quote":  "Someone like me learns to survive storms without making a sound.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Violent home, Hypervigilance, Emotional suppression",
+        "Prompt_1_Abyss":  "When did you first learn to stay silent",
+        "Prompt_2_Awaken":  "What danger are you always listening for",
+        "Prompt_3_Scar":  "What would safety feel like to you",
+        "Image_File":  "./images/heroes/Silent_Survivor.png"
+    },
+    {
+        "Char_ID":  "Shadow",
+        "Title":  "Shadow",
+        "Trauma_Text":  "Someone else was always the one they were proud of.",
+        "Quote":  "Someone like me learns how to disappear in a room full of family.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Parental favoritism, Sibling comparison, Low self-worth",
+        "Prompt_1_Abyss":  "When did you realize you were the other child",
+        "Prompt_2_Awaken":  "Who were you always compared to",
+        "Prompt_3_Scar":  "What would it mean to finally be seen",
+        "Image_File":  "./images/heroes/Shadow.png"
+    },
+    {
+        "Char_ID":  "Split_Child",
+        "Title":  "Split Child",
+        "Trauma_Text":  "Home broke in two, and I was left standing between them.",
+        "Quote":  "Someone like me learns to live with one foot in every world.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Divorced parents, Split identity, Emotional hiding",
+        "Prompt_1_Abyss":  "When did home stop feeling like one place",
+        "Prompt_2_Awaken":  "Where do you feel you truly belong",
+        "Prompt_3_Scar":  "What part of you was lost in the divide",
+        "Image_File":  "./images/heroes/Split_Child.png"
+    },
+    {
+        "Char_ID":  "Secret_Keeper",
+        "Title":  "Secret Keeper",
+        "Trauma_Text":  "Some things were never meant to be spoken.",
+        "Quote":  "Someone like me learns to carry silence like a second skin.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Hidden family secret, Isolation, Emotional suppression",
+        "Prompt_1_Abyss":  "What truth were you never allowed to tell",
+        "Prompt_2_Awaken":  "Who would you trust with your secret",
+        "Prompt_3_Scar":  "What would happen if the silence broke",
+        "Image_File":  "./images/heroes/Secret_Keeper.png"
+    },
+    {
+        "Char_ID":  "The_Drifter",
+        "Title":  "The Drifter",
+        "Trauma_Text":  "Home was never a place that stayed.",
+        "Quote":  "Someone like me learns to live without belonging anywhere.",
+        "Damage_Feature":  "",
+        "Trauma_Tags":  "Unstable belonging, Identity drift, Emotional displacement",
+        "Prompt_1_Abyss":  "When did you start feeling like an outsider",
+        "Prompt_2_Awaken":  "Where do you go when you feel lost",
+        "Prompt_3_Scar":  "What would it mean to truly belong",
+        "Image_File":  "./images/heroes/The_Drifter.png"
+    }
+]

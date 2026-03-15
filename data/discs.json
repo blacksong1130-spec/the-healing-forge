@@ -1,0 +1,63 @@
+﻿[
+    {
+        "Disc_ID":  "entry",
+        "Theme":  "The Echo",
+        "Rolling_Lyrics":  "",
+        "Layer1_Video":  "./盘子视觉和音乐/layer1主视觉.mp4",
+        "Layer2_Video":  "",
+        "Audio_File":  "",
+        "Text_File":  "",
+        "Image_File":  "",
+        "Cover_Image":  "",
+        "Entry_Only":  true
+    },
+    {
+        "Disc_ID":  "disc_01",
+        "Theme":  "The Signal-Alyssa",
+        "Rolling_Lyrics":  "A door opens then forgets me\nI push and it pushes back\nA wire hums under my skin\nI follow the signal anyway\nThe static is my only friend",
+        "Layer1_Video":  "./盘子视觉和音乐/layer1主视觉.mp4",
+        "Layer2_Video":  "./盘子视觉和音乐/disc-01.mp4",
+        "Audio_File":  "./盘子视觉和音乐/音乐/1.mp3",
+        "Text_File":  "./content/story_01.txt",
+        "Image_File":  "./盘子视觉和音乐/disc-01.mp4",
+        "Cover_Image":  "./盘子视觉和音乐/cover-1.jpg",
+        "Entry_Only":  false
+    },
+    {
+        "Disc_ID":  "disc_02",
+        "Theme":  "Red Heart-Roxy",
+        "Rolling_Lyrics":  "My parents glow inside their streaming screens\nI dance small tricks to make hearts appear\nEach jump leaves another pixel on me\nLikes fall slowly like quiet digital snow\nThe red heart beats louder than mine",
+        "Layer1_Video":  "./盘子视觉和音乐/layer1主视觉.mp4",
+        "Layer2_Video":  "./盘子视觉和音乐/disc-02.mp4",
+        "Audio_File":  "./盘子视觉和音乐/音乐/2.mp3",
+        "Text_File":  "./content/story_02.txt",
+        "Image_File":  "./盘子视觉和音乐/disc-02.mp4",
+        "Cover_Image":  "./盘子视觉和音乐/cover-2.jpg",
+        "Entry_Only":  false
+    },
+    {
+        "Disc_ID":  "disc_03",
+        "Theme":  "Signal Garden-Dora",
+        "Rolling_Lyrics":  "I call for them but only screens answer\nTheir voices fade behind a wall of light\nSignals bloom softly under my skin\nBirds circle slowly like quiet satellites\nThe pixels know my name better than they do",
+        "Layer1_Video":  "./盘子视觉和音乐/layer1主视觉.mp4",
+        "Layer2_Video":  "./盘子视觉和音乐/disc-03.mp4",
+        "Audio_File":  "./盘子视觉和音乐/音乐/3.mp3",
+        "Text_File":  "./content/story_03.txt",
+        "Image_File":  "./盘子视觉和音乐/disc-03.mp4",
+        "Cover_Image":  "./盘子视觉和音乐/cover-3.jpg",
+        "Entry_Only":  false
+    },
+    {
+        "Disc_ID":  "disc_04",
+        "Theme":  "Great Recasting-Kai",
+        "Rolling_Lyrics":  "My father called the sea a lesson\nCold water closed before I understood\nA wet towel dimmed the light\nHe said be still, this is love\nThe wheel turns, the water rises\nAt the center I learn not to cry",
+        "Layer1_Video":  "./盘子视觉和音乐/layer1主视觉.mp4",
+        "Layer2_Video":  "./盘子视觉和音乐/disc-04.mp4",
+        "Audio_File":  "./盘子视觉和音乐/音乐/4.mp3",
+        "Text_File":  "./content/story_04.txt",
+        "Image_File":  "./盘子视觉和音乐/disc-04.mp4",
+        "Cover_Image":  "./盘子视觉和音乐/cover-4.jpg",
+        "Entry_Only":  false
+    }
+]
+

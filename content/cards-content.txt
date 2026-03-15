@@ -1,0 +1,13 @@
+﻿[Batman]
+TRAUMA: My world collapsed in a single day, and I was left forever in that lightless alley.
+QUOTE: Someone like me can wear fear as armor and become a god in the night.
+BASIC: Batman is a symbolic hero projection in Project Apotheosis.
+LOW: My world collapsed in a single day, and I was left forever in that lightless alley.
+HIGHLIGHT: Someone like me can wear fear as armor and become a god in the night.
+
+[Captain America]
+TRAUMA: In corners full of malice, my resistance felt like a joke. I was knocked down again and again.
+QUOTE: Someone like me can still raise a battered shield and say, I can do this all day.
+BASIC: Captain America is a symbolic hero projection in Project Apotheosis.
+LOW: In corners full of malice, my resistance felt like a joke. I was knocked down again and again.
+HIGHLIGHT: Someone like me can still raise a battered shield and say, I can do this all day.
