@@ -618,6 +618,9 @@
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
       gap: 0.8rem;
       margin: 0.4rem 0 0.8rem;
+      width: 100%;
+      box-sizing: border-box;
+      justify-items: center;
     }
 
     .disc-card {
@@ -633,6 +636,7 @@
       cursor: pointer;
       color: inherit;
       transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, border-color 0.45s ease, background 0.45s ease;
+      touch-action: manipulation;
     }
 
     .disc-card:focus-visible {
@@ -731,6 +735,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       align-self: flex-start;
+      touch-action: manipulation;
     }
 
     .layer-btn:hover {
@@ -1901,6 +1906,7 @@
         padding: 1rem 1.2rem 1.4rem;
         width: 100%;
         align-items: stretch;
+        text-align: left;
       }
 
       .healing-lab {
@@ -1961,7 +1967,12 @@
       }
 
       .disc-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.7rem;
+      }
+
+      .disc-card {
+        width: 100%;
       }
 
       .player-shell {
@@ -1975,6 +1986,7 @@
 
       .layer-actions {
         gap: 0.6rem;
+        width: 100%;
       }
 
       .layer-actions #backToEntryBtn {
@@ -1988,12 +2000,28 @@
       }
 
       .cards-layer {
-        width: 94vw;
-        padding: 4.2rem 0 2.6rem;
+        width: 100%;
+        padding: 2.6rem 0 2.4rem;
       }
 
       .cards-title {
         padding: 0 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .carousel-stage {
+        margin: 0 auto 1rem;
+      }
+
+      .three-d-carousel {
+        --radius: clamp(92px, 26vw, 140px);
+        width: 100%;
+        height: 200px;
+      }
+
+      .healing-lab {
+        width: 100%;
+        margin: 0 auto 2rem;
       }
 
       .vinyl-wrap {
@@ -2893,6 +2921,12 @@
         }
 
         discGallery.innerHTML = "";
+        const onDiscActivate = function (discId) {
+          selectDisc(discId, { autoplay: true });
+        };
+
+        let lastTouchTime = 0;
+
         discs.forEach(function (disc) {
           const button = document.createElement("button");
           button.type = "button";
@@ -2925,8 +2959,17 @@
           button.appendChild(label);
           button.appendChild(indicator);
 
+          button.addEventListener("touchend", function (event) {
+            event.preventDefault();
+            lastTouchTime = Date.now();
+            onDiscActivate(disc.id);
+          }, { passive: false });
+
           button.addEventListener("click", function () {
-            selectDisc(disc.id, { autoplay: true });
+            if (Date.now() - lastTouchTime < 500) {
+              return;
+            }
+            onDiscActivate(disc.id);
           });
 
           discGallery.appendChild(button);
